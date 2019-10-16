@@ -12,12 +12,18 @@ const FakeButton = styled.button`
   padding: 0.25em 1em;
   border: 2px solid red;
   border-radius: 3px;
-` 
+`
+
+const OtherFakeButton = styled(FakeButton)`
+  padding: 3em 1em;
+  border-radius: 0;
+`
 
 const Home = () => (
   <Main>
     <FakeButton>FAKE BUTTON</FakeButton>
     <FakeButton primary>FAKE BUTTON w/ Props</FakeButton>
+    <OtherFakeButton>FAKE BUTTON NUMBER 3</OtherFakeButton>
 
     <div className='hero'>
       <h1 className='title'>Welcome to JsLou!</h1>
